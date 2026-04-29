@@ -6,6 +6,11 @@ salary = int(input("Enter your salary: "))
 expenses = int(input("Enter your expenses: "))
 days = int(input("Enter days: "))
 
+# check
+if days == 0:
+    print("Error: days cannot be zero")
+    exit()
+
 # calculations
 total_money = money + salary - expenses
 money_per_day = total_money // days
@@ -17,7 +22,4 @@ print(f"Total money: {total_money}")
 print(f"Money per day: {money_per_day}")
 print(f"Left: {rest_money}")
 
-# check
-if days == 0:
-    print("Error: days cannot be zero")
-    exit()
+
