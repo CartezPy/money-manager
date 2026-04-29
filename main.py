@@ -12,9 +12,12 @@ money_per_day = total_money // days
 rest_money = total_money % days
 
 # output
-print("\n--- RESULT ---")
+print("\n==== RESULT ====")
 print(f"Total money: {total_money}")
 print(f"Money per day: {money_per_day}")
 print(f"Left: {rest_money}")
 
-
+# check
+if days == 0:
+    print("Error: days cannot be zero")
+    exit()
